@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Mario Clone
+Comment[pt_BR]=Clone do Super Mario
+Comment=Super Mario Clone
+GenericName=Super Mario Clone
+GenericName[pt_BR]=Clone do Super Mario
+Exec=Mario
+Icon=Mario.png
+Terminal=false
+Type=Application
+Categories=Application;Game

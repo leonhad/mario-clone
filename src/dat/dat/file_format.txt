@@ -1,0 +1,29 @@
+All files are little-endian
+
+OBJ - Object File
+
+0x0 - short - File magic 0xEF 0xDE
+
+0x1 - byte - File version
+
+0x3 - byte - File type
+
+    1 = Other
+    2 = Image
+    3 = Binary Configuration
+    4 = Ini Configuration
+    5 = Script
+    6 = Map
+    7 = Sprite
+
+0x4 - integer - Object data CRC
+
+0x8 - byte - Name size
+
+0x9 - char[] Object Name (case sensitive)
+
+0x9 + Name size
+ 0x0 - Object size
+ 0x4 - Object data
+
+DAT - Data file

@@ -1,0 +1,35 @@
+# if defined(UNDER_CE)
+#  include <winbase.h>
+# else
+#  include <winver.h>
+# endif
+
+MAINICON ICON MOVEABLE DISCARDABLE "icon.ico"
+
+VS_VERSION_INFO VERSIONINFO
+        FILEVERSION 1,0,0,1
+        PRODUCTVERSION 1,0,0,1
+        FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+        FILEFLAGS VS_FF_DEBUG
+#else
+        FILEFLAGS 0x0L
+#endif
+        FILEOS VOS__WINDOWS32
+        FILETYPE VFT_DLL
+        FILESUBTYPE 0x0L
+        BEGIN
+                BLOCK "StringFileInfo"
+                BEGIN
+                        BLOCK "040904B0"
+                        BEGIN
+                                VALUE "CompanyName", "Leonardo A. Costa\0"
+                                VALUE "FileDescription", "Super Mario Clone Grid Sprite Editor\0"
+                                VALUE "FileVersion", "1.0.0.1\0"
+                                VALUE "LegalCopyright", "LGPL3\0"
+                                VALUE "OriginalFilename", "Grid.exe\0"
+                                VALUE "ProductName", "Grid\0"
+                        END
+                END
+        END
+/* End of Version info */
