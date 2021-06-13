@@ -23,7 +23,7 @@ int Buffer::position()
     return m_position;
 }
 
-void Buffer::position(int newPosition) throw(IOException)
+void Buffer::position(int newPosition)
 {
     if (newPosition >= m_limit || newPosition < 0) {
         throw IOException("Invalid position.");
@@ -36,7 +36,7 @@ int Buffer::limit()
     return m_limit;
 }
 
-void Buffer::limit(int newLimit) throw(IOException)
+void Buffer::limit(int newLimit)
 {
     //if ((newLimit > capacity) || (newLimit < 0))
     //    throw new IllegalArgumentException();

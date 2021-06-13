@@ -21,11 +21,11 @@ namespace io {
         int position();
         int remaining();
         int limit();
-        void limit(int newLimit) throw(IOException);
+        void limit(int newLimit);
         bool hasRemaining();
         void clear();
         void flip();
-        void position(int newPosition) throw(IOException);
+        void position(int newPosition);
         void rewind();
     };
 

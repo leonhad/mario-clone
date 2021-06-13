@@ -1,7 +1,7 @@
 #ifndef MAPEDITORWINDOW_H
 #define MAPEDITORWINDOW_H
 
-#include <QMainWindow>
+#include <QtWidgets/QMainWindow>
 
 namespace Ui {
     class MapEditorWindow;

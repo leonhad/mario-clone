@@ -1,5 +1,6 @@
 TARGET = MapEditor
 TEMPLATE = app
+QT += widgets
 DESTDIR = ../../bin
 win32:RC_FILE = MapEditor.rc
 macx:ICON = MapEditor.icns

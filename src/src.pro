@@ -1,5 +1,5 @@
 TEMPLATE  = subdirs
 CONFIG   += ordered
 
-SUBDIRS = dat ini \
+SUBDIRS = dat \
     app gred packager mapeditor
